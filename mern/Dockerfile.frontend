@@ -1,0 +1,10 @@
+FROM node:10.16-alpine
+
+EXPOSE 3000
+
+WORKDIR /app
+
+COPY ./app/react-app/ .
+
+CMD ["npm", "start"]
+
